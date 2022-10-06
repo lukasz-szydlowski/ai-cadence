@@ -1,0 +1,10 @@
+<strings>
+    <string id="AppName">AI Cadence</string>
+
+    <string id="prompt">Click the menu button</string>
+
+    <string id="menu_start">Start recording</string>
+    <string id="menu_stop">Stop recording</string>
+    <string id="menu_send">Send data</string>
+    <string id="menu_cancel">Cancel</string>
+</strings>
