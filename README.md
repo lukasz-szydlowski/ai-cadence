@@ -2,7 +2,8 @@
 
 The purpose of this experiment was to prove that a neural network can learn up correlation between bike movements and a cadence rider is stoking down the bike pedals during the ride. To collect training data along with target labels I used Garmin Edge 530 head unit attached to bike's handlebar with a rig mount. The following picture shows the setup used in experiment.
 
-
+![Garmin Edge 530](https://raw.githubusercontent.com/lukaszszydlowski/ai-cadence/main/Garmin%20Edge%20530.jpg)
+![Cadence sensor](https://raw.githubusercontent.com/lukaszszydlowski/ai-cadence/main/Cadence%20sensor.jpg)
 
 The head unit is capable of recording its movements acceleration in each of 3 axes with sample rate of 25 Hz and resolution up to 0,001 G. The usual cadence bike riders travel with varies between 60 and 120 stokes per minute (1 - 2 Hz). To correctly label data samples I used a cadence sensor attached directly to the bike's crank. A sample rate in this case was only 1 Hz. To develop and test the utility I used Visual Studio Code and Garmin Monkey C environment and emulator. During my rides I managed to collect 380 minutes of labeled data. That gives a total of 22 800 samples. A single sample was 1 sec long and has 25 accelerometer readings form all 3 axes and 1 corresponding cadence label. I assumed this was enough to capture a characteristic of the movements while pedaling at certain cadence. The utility code can be found ...
 
