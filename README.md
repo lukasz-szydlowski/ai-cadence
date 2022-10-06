@@ -1,6 +1,6 @@
 # AI Cadence
 ## The Experiment and motivation
-The purpose of this experiment was to prove that a neural network can learn up correlation between bike movements and a cadence rider is stoking down the bike pedals during the ride. I was motivated by the fact 2 of my passions are computer since and cycling. For me, this was a perfect way to combine those two worlds together.
+The goal of this experiment was to prove that a neural network can learn up correlation between bike movements and a cadence rider is stoking down the bike pedals during the ride. I was motivated by the fact 2 of my passions are computer since and cycling. For me, this was a perfect way to combine those two worlds together.
  ## Setting up and collecting data
  To collect training data along with target labels I used Garmin Edge 530 head unit attached to bike's handlebar with a rig mount. The head unit is capable of recording its movements acceleration in each of 3 axes with sample rate of 25 Hz and resolution up to 0,001 G. The usual cadence bike riders travel with varies between 60 and 120 stokes per minute (1-2 Hz). To correctly label data samples I used a cadence sensor attached directly to the bike's crank. A sample rate in this case was only 1 Hz. 
  
