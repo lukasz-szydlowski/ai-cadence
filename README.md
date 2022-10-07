@@ -30,4 +30,6 @@ However, when plotting up the average error in function of cadence, it can be se
 ## Conclusion
 The experiment proved that cadence can be calculated this way and the algorithm has some potential to improve. This method cannot be used in real life applications due to its limitations and error. I think the further signal denoising and processing along with training with much larger data sets would improve the results. The data augmentation couldn’t be introduced as it seems almost impossible to isolate a signal from a noise in samples. Secondly, placing a head unit on a seat post or somewhere closer to saddle (eg. on a top tube) would help to gather cleaner, less noisy data with more pronounced meaningful signals. Finally, adding readings from additional sensors such as speed and gyroscope could bring benefits and reduce prediction error even more.
 
+
+
 ![Lukasz](https://raw.githubusercontent.com/lukaszszydlowski/ai-cadence/main/pictures/lukasz.jpg)
