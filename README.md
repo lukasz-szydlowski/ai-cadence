@@ -23,7 +23,7 @@ Finally, I approached evaluation to validate and prove/disprove that my initial 
 
 ![Evaluation](https://raw.githubusercontent.com/lukaszszydlowski/ai-cadence/main/pictures/evaluation.png)
 
-However, when plotting up the average error in function of cadence, it can be seen that it generalizes quite well in the cadence range between 70 and 115 giving error between 4-17%. Having in mind that this is the most observable range of cadence cyclists use, I may say the performance is decent. Also looking at the histogram of validation set target labels we can see that the most of the distribution is within a cadence range from 85 to 105. This suggests that I didn't collect enough data outside that range. Therefore the network has seen only a small number of samples with unusual cadences during the training.
+However, when plotting up the average error in function of cadence, it can be seen that it generalizes quite well in the cadence range between 70 and 115 giving error between 4-17%. Having said that this is the most observable range of cadence cyclists use, I may say the performance is decent. Also looking at the histogram of validation set target labels we can see that the most of the distribution is within a cadence range from 85 to 105. This suggests that I didn't collect enough data outside that range. Therefore the network has seen only a small number of samples with unusual cadences during the training.
 
 ![Average error](https://raw.githubusercontent.com/lukaszszydlowski/ai-cadence/main/pictures/average%20error.jpg)
 ![Histogram - Labels](https://raw.githubusercontent.com/lukaszszydlowski/ai-cadence/main/pictures/histogram%20-%20labels.jpg)
