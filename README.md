@@ -1,13 +1,13 @@
 # AI Cadence
 ## The Experiment and motivation
-The goal of this experiment was to prove that a neural network can learn the correlation between bike movements and a cadence rider is stoking down the pedals during the ride. I was motivated by the fact 2 of my passions are computer science and cycling. For me, this was a perfect way to combine those two worlds together.
+The goal of this experiment was to prove that a neural network can learn the correlation between bike displacements and a cadence rider is stoking down the pedals during the ride. I was motivated by the fact 2 of my passions are computer science and cycling. For me, this was a perfect way to combine those two worlds together.
 ## Setting up and collecting data
 To collect training data and target labels I used a Garmin Edge 530 head unit attached to the handlebar with a rig mount. The head unit is capable of recording acceleration along each of 3 axes with sample rate of 25 Hz and sensitivity up to 0,001 G. The usual cadence cyclists travel with, varies between 60 and 120 strokes per minute. In order to correctly label data samples I used a cadence sensor attached directly to the crank. A sample rate in this case was only 1 Hz. 
  
 ![Garmin Edge 530](https://raw.githubusercontent.com/lukaszszydlowski/ai-cadence/main/pictures/Garmin%20Edge%20530.jpg)
 ![Cadence sensor](https://raw.githubusercontent.com/lukaszszydlowski/ai-cadence/main/pictures/Cadence%20sensor.jpg)
 ## Utility 
-To develop and test the utility I used Visual Studio Code, Garmin Monkey C environment and emulator. During my rides I managed to collect 380 minutes of labeled data. That gives a total of 22 800 samples. A single sample was 1 sec long and has 25 accelerometer readings from all 3 axes and 1 corresponding cadence label. I assumed this was enough to capture a characteristic of the movements while pedaling at a certain cadence. All data was synchronized with the outside world using a cloud based key-value bucket, as the Garmin don't supply programmers with file storage API.
+To develop and test the utility I used Visual Studio Code, Garmin Monkey C environment and emulator. During my rides I managed to collect 380 minutes of labeled data. That gives a total of 22 800 samples. A single sample was 1 sec long and has 25 accelerometer readings from all 3 axes and 1 corresponding cadence label. I assumed this was enough to capture a characteristic of the displacements while pedaling at a certain cadence. All data was synchronized with the outside world using a cloud based key-value bucket, as the Garmin don't supply programmers with file storage API.
 
 ![Monkey C emulator](https://raw.githubusercontent.com/lukaszszydlowski/ai-cadence/main/pictures/Monkey%20C%20emulator.png)
 ## Data analysis and preprocessing
